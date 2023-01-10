@@ -228,6 +228,10 @@ footer .copyright {
 /* Hero Area */
 
 .hero-area {
+  background: url(../img/unplugged-retreat.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -279,6 +283,9 @@ input[type=button] {
 /* Features */
 
 .features {
+  background: url('../img/unplugged-retreat-features.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -470,10 +477,21 @@ input[type=button] {
 
 @media only screen and (min-width: 768px) {
   /* Tablet Styles Here */
+
   /* General styles */
   .content-wrapper {
     max-width: 640px;
     margin: 100px 0;
+  }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+      font-size: 1.5em;
+      line-height: 1.25;
   }
 
   /* Header */
@@ -485,6 +503,10 @@ input[type=button] {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 20%;
   }
 
   header nav {
@@ -499,6 +521,16 @@ input[type=button] {
     display: none;
   }
   /* Hero Area */
+
+  .hero-area {
+    min-height: 600px;
+  }
+
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
 
   /* Aside */
   aside .content-wrapper {
@@ -515,6 +547,11 @@ input[type=button] {
   }
 
   /* Features */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -601,8 +638,27 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* desktop styles here */ 
+
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
+  }
+
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
   }
 
   /* Hero */
@@ -635,6 +691,14 @@ input[type=button] {
     width: 42%;
   }
 
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
+  footer h4 {
+    font-size: 1.875em;
+  }
+
   /* ==========================================================================
   About Page
   ========================================================================== */
@@ -642,13 +706,25 @@ input[type=button] {
   .mission h2,
   .contact-section .content-wrapper h2 {
       width: 95%;
-  }
+      font-size: 3em;
+    }
+  
+    .contact-content h4 {
+      font-size: 1.875em;
+    }
 
   /* ==========================================================================
   FAQ Page
   ========================================================================== */
   .faq h2 {
     width: 100%;
+    font-size: 3em;
+  }
+    
+  .faq h4,
+  .faq p {
+      font-size: 1.125em;
+      line-height: 1;
   }
 }
 
